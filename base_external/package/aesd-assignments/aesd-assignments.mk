@@ -1,4 +1,4 @@
-AESD_ASSIGNMENTS_VERSION = 294f579b86c088b59bca3ddd9ff86707fb72c1ae
+AESD_ASSIGNMENTS_VERSION = 415c07cabdbd3bf943dcbea757e7b3ea1af18b4b
 AESD_ASSIGNMENTS_SITE = git@github.com:cu-ecen-aeld/assignments-3-and-later-ZatharV.git
 AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
@@ -15,7 +15,7 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
     $(INSTALL) -m 0755 $(@D)/finder-app/finder*.sh $(TARGET_DIR)/usr/bin
     $(INSTALL) -m 0755 $(@D)/finder-app/writer $(TARGET_DIR)/usr/bin
 
-    $(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin
+    $(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin/aesdsocket
     $(INSTALL) -m 0755 $(@D)/server/aesdsocket-start-stop $(TARGET_DIR)/etc/init.d/S99aesdsocket
 endef
 
